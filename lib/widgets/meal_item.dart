@@ -26,16 +26,12 @@ class MealItem extends StatelessWidget {
     switch (complexity) {
       case Complexity.simple:
         return 'Simple';
-        break;
       case Complexity.challenging:
         return 'Challenging';
-        break;
       case Complexity.hard:
         return 'Hard';
-        break;
       default:
         return 'Unknown';
-        break;
     }
   }
 
@@ -43,16 +39,12 @@ class MealItem extends StatelessWidget {
     switch (affordability) {
       case Affordability.affordable:
         return 'Affordable';
-        break;
       case Affordability.pricey:
         return 'Pricey';
-        break;
       case Affordability.luxurious:
         return 'Luxurious';
-        break;
       default:
         return 'Unknown';
-        break;
     }
   }
 
@@ -105,7 +97,7 @@ class MealItem extends StatelessWidget {
                       ),
                       child: Text(
                         title,
-                        style: TextStyle(fontSize: 26, color: Colors.white),
+                        style: const TextStyle(fontSize: 26, color: Colors.white),
                         softWrap: true,
                         overflow: TextOverflow.fade,
                       ),
